@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FLARE-IR Complete SIM — Epistemologi, Bacaan & Interaktiviti</title>
+<style>
+:root{--bg:#f4f7fb;--paper:#fff;--ink:#142033;--muted:#617086;--line:#dce3ec;--navy:#102d50;--blue:#245fbd;--teal:#0f766e;--gold:#a96d12;--soft:#eef5ff;--ok:#eaf8f3;--warn:#fff7e5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,Arial,sans-serif}
+.hero{background:linear-gradient(120deg,#0d2948,#1d5a89);color:#fff;padding:34px 18px}.wrap{max-width:1050px;margin:auto}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-size:.76rem;opacity:.78;font-weight:700}.hero h1{font-size:clamp(2rem,5vw,3.4rem);line-height:1.1;margin:.3rem 0}.hero p{max-width:800px;font-size:1.08rem}
+.progress{height:8px;background:#dfe6ef;position:sticky;top:0;z-index:20}.progress>div{height:100%;background:var(--blue);transition:.3s}
+main{padding:24px 16px 70px}.screen{display:none}.screen.active{display:block}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:26px;margin-bottom:18px;box-shadow:0 8px 28px rgba(16,45,80,.05)}
+.kicker{font-size:.78rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--blue)}h2{font-size:1.75rem;line-height:1.25;margin:.25rem 0 1rem}h3{margin:1.4rem 0 .6rem}
+.callout{border-left:5px solid var(--blue);background:var(--soft);padding:15px 18px;border-radius:0 12px 12px 0}.key{background:var(--navy);color:#fff;border-radius:15px;padding:18px;margin-top:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.mini{border:1px solid var(--line);border-radius:13px;padding:15px;background:#fff}
+button{font:inherit}.choice,.cardbtn{width:100%;min-height:58px;text-align:left;background:#fff;color:var(--ink);border:1px solid var(--line);border-radius:13px;padding:14px;cursor:pointer}
+.choice:hover,.cardbtn:hover{border-color:var(--blue);background:#f8fbff}.choice.sel,.cardbtn.sel{border:2px solid var(--blue);background:var(--soft)}
+.feedback{display:none;margin-top:12px;border:1px solid #a8dfd0;background:var(--ok);border-radius:12px;padding:14px}.feedback.show{display:block}.feedback.warn{border-color:#e8cf91;background:var(--warn)}
+.flow{display:flex;align-items:center;flex-wrap:wrap;gap:7px}.flow span{border:1px solid var(--line);background:#f6f8fb;border-radius:10px;padding:9px 11px}.flow .arr{border:0;background:transparent;padding:0}
+table{width:100%;border-collapse:collapse;font-size:.94rem}th,td{border-bottom:1px solid var(--line);padding:10px;text-align:left;vertical-align:top}th{background:#f3f6fa}
+.scroll{overflow-x:auto}.tag{display:inline-block;background:#eaf0f7;border-radius:999px;padding:4px 9px;margin:2px;font-size:.82rem}
+details{border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:9px 0;background:#fff}summary{cursor:pointer;font-weight:750}
+textarea{width:100%;min-height:95px;border:1px solid var(--line);border-radius:12px;padding:12px;font:inherit;margin:6px 0 12px}
+.nav{display:flex;justify-content:space-between;gap:10px;margin-top:22px}.nav button{border:0;border-radius:11px;padding:12px 17px;font-weight:750;cursor:pointer}.prev{background:#e6edf5}.next{background:var(--blue);color:#fff}.score{font-size:1.4rem;font-weight:850;color:var(--teal)}
+.small{font-size:.9rem;color:var(--muted)}.toc button{display:block;width:100%;text-align:left;border:0;background:transparent;padding:9px 4px;color:var(--ink);cursor:pointer;border-bottom:1px solid var(--line)}
+footer{text-align:center;color:var(--muted);padding:28px;font-size:.85rem}
+@media(max-width:620px){.panel{padding:18px}.nav{position:sticky;bottom:8px;background:rgba(244,247,251,.95);padding:8px;border-radius:13px}table{min-width:720px}}
+</style></head>
+<body>
+<header class="hero"><div class="wrap"><div class="eyebrow">FLARE-IR • Complete Self-Instructional Material + Reading Hub</div>
+<h1>🔎 Epistemologi dalam Penyelidikan Hubungan Industri</h1>
+<p><strong>Bagaimana Kita Tahu?</strong> Kerangka falsafah, paradigma utama dan aplikasi kepada dunia pekerjaan — dipelajari melalui penerangan, keputusan, maklum balas, refleksi dan kes IR.</p></div></header>
+<div class="progress"><div id="bar"></div></div>
+<main class="wrap">
+
+<section class="screen active"><div class="panel">
+<div class="kicker">Orientasi SIM • 3 minit</div><h2>Cara menggunakan SIM ini</h2>
+<p>SIM ini menggabungkan <strong>kandungan penuh</strong> dengan aktiviti interaktif. Jangan sekadar membaca. Pada setiap misi, buat keputusan dahulu sebelum membaca maklum balas.</p>
+<div class="grid"><div class="mini"><strong>1 · Experience</strong><br>Hadapi situasi IR.</div><div class="mini"><strong>2 · Decide</strong><br>Buat pertimbangan.</div><div class="mini"><strong>3 · Feedback</strong><br>Semak penaakulan.</div><div class="mini"><strong>4 · Concept</strong><br>Pelajari konsep.</div><div class="mini"><strong>5 · Apply</strong><br>Gunakan semula.</div></div>
+<h3>Hasil Pembelajaran</h3><ul><li>Menjelaskan sifat, sumber, justifikasi dan batas pengetahuan.</li><li>Membezakan ontologi, epistemologi, metodologi dan kaedah.</li><li>Menilai kesesuaian bukti dengan dakwaan pengetahuan.</li><li>Membandingkan postpositivisme, interpretivisme, pendekatan kritikal dan realisme kritikal.</li><li>Menjelaskan double hermeneutic, positionality dan refleksiviti.</li></ul>
+<div class="key">👁️ <b>ONTOLOGI:</b> Realiti menurut siapa?<br>🔎 <b>EPISTEMOLOGI:</b> Bagaimana kita tahu?</div>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">Mission 01 • Trigger</div><h2>Bolehkah kita mempercayai dakwaan ini?</h2>
+<p>Organisasi X merekodkan hanya <strong>5 aduan formal</strong> sepanjang tahun.</p>
+<div class="callout"><b>Pengurusan:</b> “Hubungan pekerja–pengurusan di organisasi kami adalah baik.”</div>
+<h3>Adakah bukti tersebut mencukupi?</h3><div class="grid">
+<button class="choice" data-q="q1" data-v="a">A. Ya</button><button class="choice" data-q="q1" data-v="b">B. Tidak sama sekali</button><button class="choice" data-q="q1" data-v="c">C. Belum boleh dipastikan</button></div>
+<div class="feedback" id="fb-q1"></div>
+<h3>Mengapa ini persoalan epistemologi?</h3>
+<p>Lima aduan membolehkan kita mengetahui bilangan aduan yang <em>direkodkan melalui mekanisme formal</em>. Ia belum memberitahu sama ada pekerja berpuas hati, mempercayai mekanisme aduan, takut tindakan balas, menggunakan saluran tidak formal atau memilih untuk berdiam diri.</p>
+<div class="key"><b>Prinsip:</b> Data tidak bercakap dengan sendirinya. Apa yang boleh kita dakwa bergantung pada bukti, cara bukti dihasilkan, konteks dan tafsiran.</div>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">Konsep 01 • Ontologi → Epistemologi</div><h2>Daripada “realiti” kepada “pengetahuan”</h2>
+<div class="grid"><div class="mini"><b>Pengurusan</b><br>“Mekanisme aduan berfungsi dengan baik.”</div><div class="mini"><b>Pekerja</b><br>“Saya takut bersuara.”</div><div class="mini"><b>Kesatuan</b><br>“Pekerja datang kepada kami secara tidak formal.”</div></div>
+<p>Jika aktor dalam organisasi yang sama boleh mengalami dan mentafsir realiti secara berbeza, penyelidik perlu menentukan bagaimana realiti tersebut boleh diketahui.</p>
+<div class="flow"><span>👁️ Ontologi<br><b>Apakah sifat realiti?</b></span><span class="arr">→</span><span>🔎 Epistemologi<br><b>Bagaimana kita tahu?</b></span></div>
+<h3>Definisi kerja</h3><p><strong>Epistemologi</strong> membincangkan sifat, sumber, justifikasi dan batas pengetahuan: apa yang boleh diketahui, bagaimana ia diketahui, apa yang dikira sebagai bukti, mengapa sesuatu dakwaan boleh dipercayai, dan apakah batasnya.</p>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">Mission 02 • Evidence Detective</div><h2>Bukti untuk dakwaan yang mana?</h2>
+<p>Klik setiap sumber.</p><div class="grid">
+<button class="cardbtn evidence" data-e="stats"><b>📊 Rekod</b><br><span class="small">5 aduan formal.</span></button>
+<button class="cardbtn evidence" data-e="worker"><b>🗣️ Pekerja</b><br><span class="small">“Saya takut membuat aduan.”</span></button>
+<button class="cardbtn evidence" data-e="union"><b>🤝 Kesatuan</b><br><span class="small">Aduan tidak formal.</span></button>
+<button class="cardbtn evidence" data-e="policy"><b>📄 Polisi</b><br><span class="small">Prosedur rasmi wujud.</span></button></div>
+<div class="feedback show" id="e-detail">Pilih satu sumber bukti.</div>
+<h3>Data → Bukti → Dakwaan</h3>
+<p><strong>Data</strong> ialah bahan yang dihasilkan/dikumpul. Data menjadi <strong>bukti</strong> apabila digunakan untuk menyokong jawapan atau dakwaan. <strong>Dakwaan pengetahuan</strong> ialah apa yang penyelidik menyatakan boleh diketahui berdasarkan bukti tersebut.</p>
+<div class="key">💡 Dakwaan → 📑 Bukti → 🔎 Justifikasi → ⚠️ Batas</div>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">Konsep 02 • Falsafah Penyelidikan</div><h2>Empat andaian yang perlu dibezakan</h2>
+<details open><summary>👁️ Andaian Ontologi</summary><p>Apakah sifat realiti? Dalam banyak tradisi kualitatif, penyelidik memberi perhatian kepada kemungkinan realiti yang pelbagai dan pengalaman yang berbeza antara aktor.</p></details>
+<details><summary>🔎 Andaian Epistemologi</summary><p>Bagaimana pengetahuan tentang realiti boleh dihasilkan dan dijustifikasi? Apakah hubungan antara penyelidik, peserta, bukti dan dakwaan?</p></details>
+<details><summary>⚖️ Andaian Aksiologi</summary><p>Apakah peranan nilai dalam penyelidikan? Banyak pendekatan kualitatif menuntut penyelidik mengakui nilai, kedudukan dan andaian yang relevan.</p></details>
+<details><summary>🧭 Andaian Metodologi</summary><p>Bagaimana penyelidikan dijalankan secara sistematik? Reka bentuk kualitatif sering bersifat fleksibel, iteratif dan responsif terhadap data, tetapi tidak semua kajian kualitatif semestinya induktif sepenuhnya.</p></details>
+<div class="key">Jangan samakan <b>epistemologi</b> dengan <b>kaedah</b>. Temu bual ialah kaedah; ia bukan epistemologi.</div>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">Mission 03 • Four Researcher Lenses</div><h2>Fenomena sama, pengetahuan berbeza</h2>
+<p><b>Fenomena:</b> Pekerja jarang menggunakan mekanisme aduan formal.</p>
+<div class="grid"><button class="cardbtn lens" data-l="post">📊 <b>Postpositivis</b></button><button class="cardbtn lens" data-l="interp">🗣️ <b>Interpretif</b></button><button class="cardbtn lens" data-l="crit">⚖️ <b>Kritikal</b></button><button class="cardbtn lens" data-l="real">⚙️ <b>Realis Kritikal</b></button></div>
+<div class="feedback show" id="lens-detail">Pilih satu lensa.</div>
+<div class="key"><b>Key insight:</b> Fenomena sama ≠ soalan sama ≠ bukti sama ≠ pengetahuan sama.</div>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">Deep Dive • Paradigma</div><h2>Empat orientasi utama</h2>
+<h3>1. Positivisme dan Postpositivisme</h3><p>Positivisme menekankan penerapan pemerhatian sistematik, pengukuran dan penjelasan terhadap fenomena sosial. Postpositivisme lebih berhati-hati: pengetahuan dianggap tidak sempurna dan terbuka kepada pembetulan. Dalam IR/HRM, orientasi ini sering kelihatan dalam pengukuran konstruk seperti kepuasan kerja, komitmen atau turnover intention.</p>
+<p><b>Soalan dominan:</b> Apakah pola atau hubungan yang boleh diuji secara sistematik?</p>
+<h3>2. Interpretivisme dan Konstruktivisme Sosial</h3><p>Interpretivisme menekankan bagaimana manusia memahami dan memberi makna kepada dunia sosial. Konstruktivisme sosial memberi perhatian kepada bagaimana makna dibentuk dan dirunding melalui interaksi. Dalam IR, ini membolehkan kita memahami pengalaman job insecurity, employee voice, konflik atau keadilan daripada perspektif aktor.</p>
+<p><b>Soalan dominan:</b> Bagaimanakah aktor memahami dan mentafsir pengalaman mereka?</p>
+<h3>3. Pendekatan Kritikal dan Labour Process Theory</h3><p>Pendekatan kritikal menyoal bagaimana kuasa, ketidaksamaan dan struktur sosial membentuk dunia kerja. Labour Process Theory (LPT) sesuai difahami sebagai <b>kerangka teori dalam tradisi kritikal</b>, bukan sebagai satu epistemologi yang setara secara langsung dengan postpositivisme atau interpretivisme. LPT meneliti kawalan pengurusan, autonomi, teknologi, intensifikasi kerja, consent dan resistance.</p>
+<p><b>Soalan dominan:</b> Siapa mempunyai kuasa, siapa mendapat manfaat dan siapa menanggung risiko?</p>
+<h3>4. Realisme Kritikal</h3><p>Realisme kritikal menerima bahawa realiti dan struktur boleh wujud secara bebas daripada pengetahuan kita, tetapi pengetahuan mengenainya bersifat fallible, theory-laden dan boleh disemak. Ia berminat pada mekanisme yang mungkin menghasilkan outcome dalam konteks tertentu.</p>
+<p><b>Soalan dominan:</b> Apakah mekanisme yang menghasilkan outcome ini dalam konteks ini?</p>
+<h3>Pragmatisme — Explore More</h3><p>Pragmatisme memberi keutamaan kepada persoalan penyelidikan dan penyelesaian masalah praktikal, dengan keterbukaan kepada pelbagai pendekatan apabila ia sesuai dengan tujuan kajian. “What works” tidak bermaksud falsafah boleh diabaikan; pilihan masih perlu dijustifikasi.</p>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">Comparison Lab</div><h2>Jangan jadikan paradigma sebagai formula</h2>
+<div class="scroll"><table><thead><tr><th>Orientasi</th><th>Minat utama</th><th>Contoh soalan IR</th><th>Bukti yang mungkin ditekankan</th></tr></thead><tbody>
+<tr><td>Postpositivis</td><td>Pola, hubungan, penjelasan tentatif</td><td>Adakah perceived organisational support berkaitan turnover intention?</td><td>Ukuran, indikator, data sistematik</td></tr>
+<tr><td>Interpretif</td><td>Makna, pengalaman, konteks</td><td>Bagaimanakah pekerja kontrak mengalami job insecurity?</td><td>Temu bual, pemerhatian, naratif, dokumen</td></tr>
+<tr><td>Kritikal</td><td>Kuasa, ketidaksamaan, kawalan</td><td>Bagaimanakah pemantauan digital mengubah kuasa pengurusan?</td><td>Suara pekerja, dokumen, etnografi, kajian kes</td></tr>
+<tr><td>Realis kritikal</td><td>Mekanisme dalam konteks</td><td>Mengapa pekerja tidak menggunakan mekanisme aduan?</td><td>Pelbagai bukti untuk membina penjelasan mekanisme</td></tr>
+</tbody></table></div>
+<div class="callout"><b>Elakkan:</b> “positivisme = kuantitatif” dan “interpretivisme = kualitatif” sebagai hukum mutlak. Epistemologi mempengaruhi pilihan metodologi tetapi tidak menentukan satu kaedah secara mekanikal.</div>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">Mission 04 • Double Hermeneutic</div><h2>Penyelidik mentafsir tafsiran peserta</h2>
+<div class="callout">Pekerja: “Sistem pemantauan ini membuat saya rasa pengurusan tidak mempercayai kami.”</div>
+<div class="flow" style="margin-top:16px"><span>🏢 Pengalaman</span><span class="arr">→</span><span>👷 Peserta mentafsir</span><span class="arr">→</span><span>🎓 Penyelidik mentafsir tafsiran</span><span class="arr">→</span><span>📖 Analisis</span></div>
+<h3>Adakah semua tafsiran sama baik?</h3><div class="grid"><button class="choice" data-q="q2" data-v="a">A. Ya</button><button class="choice" data-q="q2" data-v="b">B. Tidak</button></div><div class="feedback" id="fb-q2"></div>
+<p>Tafsiran penyelidik perlu disokong oleh data, konteks, ketelusan analitik, refleksiviti dan pertimbangan terhadap penjelasan alternatif.</p>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">Mission 05 • Researcher in the Picture</div><h2>Siapa yang bertanya boleh mempengaruhi apa yang diketahui</h2>
+<p>Seorang pekerja ditemu bual tentang layanan tidak adil. Pilih penemubual:</p>
+<div class="grid"><button class="cardbtn researcher" data-r="uni">🎓 Penyelidik universiti</button><button class="cardbtn researcher" data-r="hr">🏢 Pegawai HR</button><button class="cardbtn researcher" data-r="boss">👔 Penyelia</button><button class="cardbtn researcher" data-r="union">🤝 Pegawai kesatuan</button></div>
+<div class="feedback show" id="r-detail">Pilih satu.</div>
+<h3>Refleksiviti</h3><p>Refleksiviti ialah proses menilai secara kritis bagaimana latar belakang, nilai, andaian, kedudukan sosial, hubungan dengan peserta dan keputusan analitik penyelidik mempengaruhi kajian.</p>
+<p><span class="tag">power</span><span class="tag">trust</span><span class="tag">identity</span><span class="tag">context</span><span class="tag">relationship</span></p>
+<label><b>Refleksi anda:</b> Bagaimana kedudukan anda sebagai penyelidik mungkin mempengaruhi temu bual?</label><textarea placeholder="Tulis 2–3 ayat..."></textarea>
+<div class="key"><b>Positionality statement</b> bukan pengakuan bahawa kajian “bias dan tidak sah”. Ia meningkatkan ketelusan tentang kedudukan penyelidik dan bagaimana pengaruh tersebut dipertimbangkan.</div>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">IR Application • Contested Knowledge</div><h2>Satu mogok, empat pemahaman</h2>
+<div class="grid"><div class="mini"><b>Majikan</b><br>“Mengganggu produktiviti.”</div><div class="mini"><b>Pekerja</b><br>“Perlu kerana kami tidak didengar.”</div><div class="mini"><b>Kesatuan</b><br>“Penggunaan kuasa kolektif.”</div><div class="mini"><b>Kerajaan</b><br>“Risiko kepada kestabilan industri.”</div></div>
+<p>Penyelidikan kualitatif tidak semestinya perlu memilih satu pihak sebagai “realiti sebenar”. Ia boleh meneliti bagaimana aktor membina dan menjustifikasi pemahaman yang berbeza terhadap pertikaian yang sama.</p>
+<div class="callout"><b>Contoh RQ:</b> Bagaimanakah pekerja, pengurusan dan wakil kesatuan membina dan menjustifikasi pemahaman yang berbeza tentang pertikaian tempat kerja?</div>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">Case Study Gallery • Explore More</div><h2>Bagaimana epistemologi muncul dalam kajian tempat kerja?</h2>
+<details><summary>O'Reilly — Service Silos</summary><p>Gunakan sebagai contoh bagaimana kerja lapangan dan data kualitatif boleh mencabar penjelasan organisasi yang diambil mudah dan membina konsep secara induktif. Fokus pedagogi: <b>apa yang dapat diketahui melalui berada dekat dengan amalan kerja?</b></p></details>
+<details><summary>Dupuis (2018) — Penutupan kilang & kuasa kesatuan</summary><p>Gunakan untuk menunjukkan bagaimana tindakan kesatuan perlu difahami bersama konteks institusi, jaringan politik dan sumber kuasa. Fokus: hubungan antara tindakan tempatan dan struktur yang lebih luas.</p></details>
+<details><summary>Hebson, Grimshaw & Marchington (2003) — PPP</summary><p>Gunakan untuk menunjukkan bagaimana perubahan organisasi boleh mempunyai akibat kepada pekerja yang tidak semestinya kelihatan melalui indikator organisasi sahaja: intensifikasi kerja, kepercayaan dan ethos perkhidmatan.</p></details>
+<details><summary>Burawoy, Lupton & Pollert — Etnografi tempat kerja</summary><p>Tradisi etnografi menunjukkan nilai pemerhatian dekat terhadap norma informal, kawalan, consent, resistance dan pengalaman gender di tempat kerja.</p></details>
+<div class="key">Kajian kes berfungsi sebagai <b>aplikasi epistemologi</b> — bukan sekadar cerita kajian.</div>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">Contemporary Debate • Optional Deep Dive</div><h2>Mengapa kajian kes tempat kerja masih penting?</h2>
+<p>Perbahasan kontemporari dalam IR mempersoalkan apa yang mungkin hilang apabila penyelidikan terlalu bergantung pada ukuran skala besar dan menjauh daripada tempat kerja. Kajian kes boleh memberikan pemahaman kontekstual tentang perubahan kerja, kuasa, institusi dan pengalaman pekerja.</p>
+<div class="callout"><b>Soalan fikir:</b> Jika penyelidikan IR semakin bergantung kepada large-scale surveys, apakah jenis pengetahuan yang mungkin kita peroleh — dan apakah yang mungkin kita kehilangan?</div>
+<h3>Amaran: piecemeal empiricism</h3><p>Kajian kes yang kaya dengan data tetapi lemah dari segi teori boleh menjadi koleksi pemerhatian yang terpisah. Kajian mikro perlu dihubungkan dengan konsep atau teori yang membantu menjelaskan mengapa fenomena itu penting.</p>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">Research Architecture</div><h2>Daripada falsafah kepada dakwaan pengetahuan</h2>
+<div class="flow"><span>👁️ Ontologi<br><b>Realiti?</b></span><span class="arr">→</span><span>🔎 Epistemologi<br><b>Bagaimana tahu?</b></span><span class="arr">→</span><span>🧭 Metodologi<br><b>Bagaimana siasat?</b></span><span class="arr">→</span><span>🛠️ Kaedah<br><b>Apa dibuat?</b></span><span class="arr">→</span><span>📑 Bukti</span><span class="arr">→</span><span>💡 Dakwaan</span></div>
+<p>Hubungan ini bukan formula mekanikal. Kualiti reka bentuk bergantung pada <strong>keselarasan dan justifikasi</strong> antara persoalan kajian, jenis pengetahuan, bukti, analisis dan dakwaan.</p>
+</div></section>
+
+
+<section class="screen"><div class="panel">
+<div class="kicker">Reading Hub • Core Reading 01</div><h2>📖 Daripada Ontologi kepada Epistemologi</h2>
+<p>Dalam penyelidikan sosial, kita tidak bermula dengan kaedah semata-mata. Kita bermula dengan andaian tentang <strong>realiti</strong> dan tentang bagaimana realiti tersebut boleh <strong>diketahui</strong>. Ontologi mempersoalkan sifat realiti; epistemologi pula mempersoalkan sifat pengetahuan tentang realiti tersebut.</p>
+<p>Bayangkan satu organisasi yang mempunyai kadar aduan formal yang sangat rendah. Pengurusan mungkin mentafsir keadaan ini sebagai tanda hubungan pekerja–pengurusan yang baik. Pekerja pula mungkin mengatakan mereka memilih untuk berdiam diri kerana takut tindakan balas. Kesatuan mungkin mengetahui bahawa pekerja sebenarnya membawa masalah melalui saluran tidak formal. Ketiga-tiga pihak berada dalam organisasi yang sama, tetapi pengalaman dan tafsiran mereka tidak semestinya sama.</p>
+<p>Di sinilah persoalan epistemologi muncul. Jika realiti tempat kerja boleh dialami secara berbeza, penyelidik perlu bertanya: <strong>bagaimanakah saya boleh mengetahui apa yang sedang berlaku?</strong> Statistik aduan, dokumen polisi, temu bual pekerja, akaun pengurusan, pengalaman kesatuan dan pemerhatian tempat kerja semuanya boleh menjadi sumber pengetahuan, tetapi setiap sumber menyokong jenis dakwaan yang berbeza.</p>
+<div class="callout"><b>Berhenti & fikir:</b> Jika pengurusan dan pekerja memberikan gambaran yang bercanggah, adakah tugas penyelidik sekadar memilih siapa yang “betul”? Atau memahami bagaimana setiap dakwaan dibentuk dan apakah bukti yang menyokongnya?</div>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">Reading Hub • Core Reading 02</div><h2>📖 Apakah Epistemologi?</h2>
+<p>Epistemologi ialah cabang falsafah yang membincangkan pengetahuan: sifatnya, sumbernya, bagaimana ia dijustifikasi dan apakah batasnya. Dalam penyelidikan, epistemologi membantu kita menentukan apa yang boleh dianggap sebagai pengetahuan yang munasabah tentang sesuatu fenomena.</p>
+<p>Empat soalan sangat penting. Pertama, <strong>apa yang boleh diketahui?</strong> Kedua, <strong>bagaimana kita boleh mengetahuinya?</strong> Ketiga, <strong>apakah yang dikira sebagai bukti?</strong> Keempat, <strong>sejauh mana bukti itu membolehkan kita membuat sesuatu dakwaan?</strong></p>
+<p>Epistemologi tidak sama dengan kaedah. Temu bual, pemerhatian, soal selidik dan analisis dokumen ialah teknik menghasilkan data. Epistemologi menerangkan logik yang lebih mendalam tentang mengapa sesuatu bentuk data relevan kepada jenis pengetahuan yang ingin dibina.</p>
+<div class="key">🔎 <b>EPISTEMOLOGI = BAGAIMANA KITA TAHU?</b><br><br>Soalan ini sentiasa perlu disambungkan kepada: <b>Apa buktinya? Mengapa bukti itu sesuai? Apa batas dakwaan kita?</b></div>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">Reading Hub • Core Reading 03</div><h2>📖 Data, Bukti dan Dakwaan Pengetahuan</h2>
+<p><strong>Data</strong> ialah bahan yang dihasilkan atau dikumpulkan melalui proses penyelidikan: transkrip temu bual, nota pemerhatian, statistik organisasi, dokumen, rakaman atau respons soal selidik. Data tidak secara automatik menjadi bukti untuk semua jenis dakwaan.</p>
+<p><strong>Bukti</strong> ialah data yang digunakan secara beralasan untuk menyokong sesuatu inferens atau dakwaan. Jika rekod menunjukkan lima aduan formal, bukti itu menyokong dakwaan bahawa lima aduan formal direkodkan. Ia tidak dengan sendirinya menyokong dakwaan bahawa pekerja berpuas hati.</p>
+<p><strong>Dakwaan pengetahuan</strong> ialah apa yang penyelidik menyatakan dapat diketahui berdasarkan analisis bukti. Dakwaan yang baik tidak melangkaui kekuatan dan skop bukti.</p>
+<div class="callout"><b>Formula penaakulan:</b><br>💡 DAKWAAN → 📑 BUKTI → 🔎 JUSTIFIKASI → ⚠️ BATAS</div>
+<h3>Reading Detective</h3><p>Sewaktu membaca artikel akademik, jangan hanya catat “dapatan”. Tanya: <b>Apakah dakwaan penulis? Bukti apa digunakan? Bagaimana bukti itu dihasilkan? Adakah dakwaan melangkaui bukti?</b></p>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">Reading Hub • Core Reading 04</div><h2>📖 Empat Lensa untuk Mengetahui Dunia Kerja</h2>
+<p><strong>Postpositivisme</strong> menerima bahawa realiti boleh dikaji secara sistematik, tetapi pengetahuan kita tentangnya sentiasa tidak sempurna dan terbuka kepada pembetulan. Penyelidik mungkin mengukur konstruk, membandingkan pola dan menguji penjelasan alternatif.</p>
+<p><strong>Interpretivisme</strong> menekankan dunia sosial sebagai dunia yang diberi makna oleh manusia. Untuk memahami employee voice, misalnya, mengetahui jumlah aduan tidak semestinya cukup; penyelidik mungkin perlu memahami apa yang dianggap pekerja sebagai “bersuara”, risiko yang mereka rasakan dan bagaimana konteks membentuk tindakan mereka.</p>
+<p><strong>Pendekatan kritikal</strong> memberi perhatian kepada kuasa, ketidaksamaan, ideologi, kawalan dan kepentingan. Dalam Hubungan Industri, Labour Process Theory menyediakan kerangka penting untuk memahami kawalan pengurusan, teknologi, autonomi, consent dan resistance. LPT lebih tepat dianggap sebagai tradisi/kerangka teori kritikal, bukan epistemologi tunggal yang berdiri sendiri.</p>
+<p><strong>Realisme kritikal</strong> membezakan antara apa yang kita alami dengan struktur atau mekanisme yang mungkin menghasilkan sesuatu outcome. Realiti tidak dianggap bergantung sepenuhnya pada pengetahuan kita, tetapi akses kepada realiti adalah fallible dan theory-laden.</p>
+<div class="callout"><b>Jangan hafal sebagai formula:</b> “postpositivis = kuantitatif” dan “interpretif = kualitatif”. Paradigma mempengaruhi reka bentuk dan justifikasi bukti, tetapi kaedah perlu dinilai dalam keseluruhan logik kajian.</div>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">Reading Hub • Core Reading 05</div><h2>📖 Interpretivisme dan Double Hermeneutic</h2>
+<p>Dalam penyelidikan interpretif, peserta bukan objek pasif. Mereka sendiri mentafsir dunia sosial. Seorang pekerja yang dipantau secara digital mungkin mentafsir pemantauan sebagai bantuan produktiviti, kawalan, ketidakpercayaan atau ancaman—bergantung pada pengalaman dan konteksnya.</p>
+<p>Penyelidik kemudian mentafsir akaun peserta tersebut. Proses ini sering diterangkan sebagai <strong>double hermeneutic</strong>: aktor sosial mentafsir dunia mereka, dan penyelidik mentafsir tafsiran aktor sosial.</p>
+<p>Ini tidak bermaksud semua tafsiran sama kukuh. Tafsiran penyelidik perlu mempunyai asas empirikal, konsisten dengan data, peka kepada konteks, telus dari segi proses analisis dan terbuka kepada penjelasan alternatif.</p>
+<div class="key">👷 Pengalaman → 💭 Tafsiran peserta → 🎓 Tafsiran penyelidik → 📖 Dakwaan analitik</div>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">Reading Hub • Core Reading 06</div><h2>📖 Penyelidik sebagai Sebahagian daripada Proses Mengetahui</h2>
+<p>Dalam penyelidikan kualitatif, hubungan antara penyelidik dan peserta boleh mempengaruhi apa yang diceritakan, bagaimana ia diceritakan dan bagaimana ia ditafsirkan. Seorang pekerja mungkin memberi respons berbeza kepada penyelia, pegawai HR, wakil kesatuan dan penyelidik universiti.</p>
+<p><strong>Positionality</strong> merujuk kepada kedudukan sosial, profesional dan intelektual penyelidik berhubung dengan medan dan peserta. <strong>Refleksiviti</strong> pula ialah amalan menilai secara kritis bagaimana identiti, nilai, andaian, kuasa dan keputusan penyelidik mempengaruhi proses menghasilkan pengetahuan.</p>
+<p>Refleksiviti bukan alasan untuk menganggap bahawa semua dapatan “sekadar subjektif”. Sebaliknya, ia merupakan strategi untuk meningkatkan ketelusan dan disiplin analitik.</p>
+<div class="callout"><b>Reflexive prompt:</b> Apakah yang mungkin peserta anda beritahu kepada anda—dan apakah yang mungkin mereka tidak beritahu—kerana siapa anda?</div>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">Reading Hub • Core Reading 07</div><h2>📖 Epistemologi dalam Hubungan Industri</h2>
+<p>Hubungan Industri sangat sesuai untuk pemikiran epistemologi kerana fenomenanya sering dipertikaikan. “Keadilan”, “suara”, “kerjasama”, “konflik”, “keselamatan kerja” dan “hubungan pekerja–pengurusan yang baik” tidak semestinya membawa makna yang sama kepada semua aktor.</p>
+<p>Contohnya, satu mogok boleh ditafsir sebagai gangguan produktiviti oleh majikan, tindakan mempertahankan hak oleh pekerja, penggunaan kuasa kolektif oleh kesatuan, atau risiko kepada kestabilan industri oleh kerajaan. Penyelidikan boleh meneliti bagaimana tafsiran tersebut dibentuk, bukti yang digunakan untuk menjustifikasikannya dan hubungan kuasa yang mempengaruhi suara siapa menjadi dominan.</p>
+<p>Oleh itu, kajian kualitatif IR boleh memberikan sumbangan khas dengan menjelaskan <strong>makna, proses, konteks dan kuasa</strong>. Namun, ia tidak perlu mendakwa bahawa hanya satu jenis bukti atau satu metodologi boleh menghasilkan pengetahuan yang berguna.</p>
+<div class="callout"><b>Soalan epistemologi IR:</b> Siapa mengetahui apa? Melalui bukti apa? Dalam hubungan kuasa yang bagaimana? Dan apakah suara yang tidak kelihatan dalam rekod rasmi?</div>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">Reading Hub • Core Reading 08</div><h2>📖 Daripada Epistemologi kepada Reka Bentuk Penyelidikan</h2>
+<p>Epistemologi mempunyai implikasi praktikal. Jika persoalan kajian meminta kita memahami bagaimana pekerja mengalami ketidakjaminan kerja, reka bentuk perlu menghasilkan bukti yang memberi akses kepada pengalaman, makna dan konteks tersebut. Jika persoalan meminta penjelasan tentang mekanisme yang menghasilkan pekerja berdiam diri, reka bentuk perlu menghubungkan pengalaman dengan struktur, proses dan konteks yang relevan.</p>
+<p>Keselarasan boleh difikirkan sebagai satu rantaian:</p>
+<div class="flow"><span>👁️ Ontologi</span><span class="arr">→</span><span>🔎 Epistemologi</span><span class="arr">→</span><span>🧭 Metodologi</span><span class="arr">→</span><span>🛠️ Kaedah</span><span class="arr">→</span><span>📑 Bukti</span><span class="arr">→</span><span>💡 Dakwaan</span></div>
+<p>Rantaian ini bukan checklist mekanikal. Penyelidik perlu <strong>menjustifikasi keselarasan</strong>: mengapa persoalan tertentu memerlukan jenis pengetahuan tertentu, mengapa bukti yang dipilih sesuai, dan mengapa dakwaan akhir munasabah berdasarkan bukti tersebut.</p>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">Reading Detective • Academic Article Challenge</div><h2>🔎 Baca artikel seperti seorang penyelidik</h2>
+<p>Pilih satu artikel Hubungan Industri yang anda sedang baca. Gunakan enam soalan ini. Jawapan anda boleh dibawa ke tutorial atau jurnal refleksiviti.</p>
+<label><b>1. CLAIM — Apakah dakwaan utama penulis?</b></label><textarea placeholder="Dakwaan utama..."></textarea>
+<label><b>2. EVIDENCE — Apakah bukti yang digunakan?</b></label><textarea placeholder="Jenis data/bukti..."></textarea>
+<label><b>3. LENS — Apakah cara mengetahui yang kelihatan mendasari kajian?</b></label><textarea placeholder="Postpositivis, interpretif, kritikal, realis kritikal, atau lain-lain? Mengapa?"></textarea>
+<label><b>4. VOICE — Perspektif siapa yang diwakili?</b></label><textarea placeholder="Pekerja, pengurusan, kesatuan, kerajaan..."></textarea>
+<label><b>5. SILENCE — Perspektif siapa yang hilang atau kurang kelihatan?</b></label><textarea placeholder="Suara yang tidak kelihatan..."></textarea>
+<label><b>6. LIMIT — Apakah yang kajian ini tidak membolehkan kita dakwa?</b></label><textarea placeholder="Batas inferens..."></textarea>
+<div class="key"><b>Tujuan:</b> membaca literatur bukan sekadar mencari “apa dapatan kajian”, tetapi menilai bagaimana pengetahuan itu dibina.</div>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">Explore More • Reading Extension</div><h2>📚 Bacaan Pengayaan</h2>
+<details><summary>⚖️ Labour Process Theory dan kuasa di tempat kerja</summary><p>Gunakan LPT untuk menyoal bagaimana proses kerja direka, bagaimana kawalan dilaksanakan, sejauh mana pekerja mempunyai autonomi, dan bagaimana consent atau resistance muncul. Dalam kajian pemantauan digital, misalnya, jangan hanya bertanya sama ada pekerja menyukai teknologi; tanya bagaimana teknologi mengubah kapasiti pengurusan untuk mengukur, mengawal dan mendisiplinkan kerja.</p></details>
+<details><summary>⚙️ Realisme kritikal dan mekanisme</summary><p>Realisme kritikal menggalakkan penyelidik bergerak daripada “apa yang berlaku?” kepada “apakah mekanisme yang mungkin menghasilkan apa yang berlaku?”. Pekerja berdiam diri mungkin berkaitan mekanisme seperti fear of retaliation, perceived futility atau employment insecurity, tetapi mekanisme tersebut tidak semestinya beroperasi sama dalam semua konteks.</p></details>
+<details><summary>🧭 Pragmatisme</summary><p>Pragmatisme berorientasikan masalah dan konsekuensi penyelidikan serta terbuka kepada pluralisme metodologi. Ia tidak bermaksud “apa sahaja boleh dibuat”; pemilihan kaedah masih perlu sesuai dengan persoalan, tujuan dan jenis inferens yang hendak dibuat.</p></details>
+<details><summary>🏭 Mengapa kajian kes tempat kerja penting?</summary><p>Kajian kes dan etnografi membolehkan penyelidik melihat proses, amalan informal, hubungan kuasa dan percanggahan antara polisi rasmi dengan pengalaman sebenar. Kekuatan ini perlu digabungkan dengan konsep dan teori supaya kajian tidak menjadi deskripsi empirikal yang terpisah-pisah.</p></details>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">Academic Reading Corner</div><h2>📚 Apa yang perlu dibaca — dan untuk tujuan apa?</h2>
+<div class="scroll"><table><thead><tr><th>Tahap</th><th>Sumber</th><th>Fokus ketika membaca</th></tr></thead><tbody>
+<tr><td><b>Essential</b></td><td>Clark, Foster, Sloan & Bryman (2021), <i>Bryman’s Social Research Methods</i>, 6th ed.</td><td>Hubungan antara epistemologi, strategi penyelidikan dan logik penyelidikan sosial.</td></tr>
+<tr><td><b>Essential</b></td><td>Creswell & Poth (2023), <i>Qualitative Inquiry and Research Design</i>, 5th ed.</td><td>Andaian falsafah, interpretive frameworks dan implikasinya terhadap kajian kualitatif.</td></tr>
+<tr><td><b>Applied IR</b></td><td>Hebson, Grimshaw & Marchington (2003)</td><td>Apakah pengalaman pekerja yang mungkin tidak kelihatan melalui indikator organisasi sahaja?</td></tr>
+<tr><td><b>Applied IR</b></td><td>Dupuis (2018)</td><td>Bagaimanakah konteks institusi dan jaringan mempengaruhi pemahaman tentang kuasa kesatuan?</td></tr>
+<tr><td><b>Critical</b></td><td>Godard (2014)</td><td>Apakah yang mungkin hilang apabila isu employment relations diterangkan terutama melalui lensa psikologi individu?</td></tr>
+<tr><td><b>Extension</b></td><td>Wright (2023)</td><td>Bagaimanakah pemilihan masalah penyelidikan membentuk orientasi kajian terhadap pekerja dan buruh?</td></tr>
+</tbody></table></div>
+<div class="callout"><b>Strategi bacaan:</b> Jangan cuba membaca semua sumber dengan intensiti yang sama. Mulakan dengan Essential Reading, gunakan Applied IR untuk melihat aplikasi, kemudian gunakan bacaan Critical/Extension untuk memperdalam hujah.</div>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">Final Mission • Epistemology Lab</div><h2>Digital Performance Monitoring</h2>
+<p>Syarikat memperkenalkan pemantauan prestasi digital. Produktiviti meningkat <b>12%</b> dan hanya <b>3 aduan formal</b> diterima.</p>
+<div class="callout"><b>Pengurusan:</b> “Pekerja telah menerima sistem.”<br><b>Pekerja:</b> “Saya rasa sentiasa diperhatikan.”</div>
+<h3>1. Dakwaan paling defensible berdasarkan angka sahaja?</h3><div class="grid"><button class="choice" data-q="q3" data-v="a">A. Semua pekerja menerima sistem.</button><button class="choice" data-q="q3" data-v="b">B. Produktiviti meningkat 12% dan 3 aduan formal direkodkan.</button><button class="choice" data-q="q3" data-v="c">C. Sistem tidak menimbulkan tekanan.</button></div><div class="feedback" id="fb-q3"></div>
+<h3>2. Untuk memahami pengalaman pekerja, bukti tambahan paling relevan?</h3><div class="grid"><button class="choice" data-q="q4" data-v="a">A. Hanya laporan produktiviti.</button><button class="choice" data-q="q4" data-v="b">B. Temu bual/pemerhatian pengalaman pekerja.</button><button class="choice" data-q="q4" data-v="c">C. Logo organisasi.</button></div><div class="feedback" id="fb-q4"></div>
+<h3>3. Lensa mana paling langsung menyoal hubungan kuasa?</h3><div class="grid"><button class="choice" data-q="q5" data-v="a">A. Kritikal/LPT</button><button class="choice" data-q="q5" data-v="b">B. Hanya deskriptif statistik</button><button class="choice" data-q="q5" data-v="c">C. Tiada lensa diperlukan</button></div><div class="feedback" id="fb-q5"></div>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">Exit Ticket • Knowledge Claim Builder</div><h2>Zero grievances ≠ zero problems</h2>
+<p><b>Data:</b> Organisasi Y melaporkan sifar aduan formal sepanjang tahun.</p>
+<label><b>Saya BOLEH dakwa bahawa...</b></label><textarea id="can" placeholder="Tuliskan dakwaan yang disokong oleh data..."></textarea>
+<label><b>Saya BELUM BOLEH dakwa bahawa...</b></label><textarea id="cannot" placeholder="Tuliskan dakwaan yang melangkaui bukti..."></textarea>
+<label><b>Untuk mengetahui lebih lanjut, saya memerlukan...</b></label><textarea id="need" placeholder="Nyatakan bukti tambahan..."></textarea>
+<div class="key"><b>Epistemological Alignment Check</b><br>💡 DAKWAAN — Apa yang saya mahu tahu?<br>📑 BUKTI — Apa yang menyokongnya?<br>🤝 HUBUNGAN — Bagaimana konteks/penyelidik mempengaruhi pengetahuan?<br>⚠️ BATAS — Apa yang tidak boleh saya dakwa?</div>
+</div></section>
+
+<section class="screen"><div class="panel">
+<div class="kicker">Completion</div><h2>🎓 Anda telah melengkapkan Full SIM</h2>
+<p>Skor knowledge check: <span class="score" id="score">0/5</span></p>
+<div class="key">👁️ <b>ONTOLOGI:</b> REALITI MENURUT SIAPA?<br><br>🔎 <b>EPISTEMOLOGI:</b> BAGAIMANA KITA TAHU?<br><br>📑 <b>BUKTI:</b> APA BUKTINYA?<br><br>💡 <b>DAKWAAN:</b> APA YANG BOLEH KITA DAKWA BERDASARKAN BUKTI ITU?</div>
+<p><b>Penyelidik yang baik bukan sekadar bertanya “Apakah jawapannya?” Mereka juga bertanya: “Bagaimana saya tahu — dan sejauh mana bukti saya membolehkan saya membuat dakwaan tersebut?”</b></p>
+<h3>Rujukan teras untuk bacaan lanjut</h3><ul>
+<li>Clark, T., Foster, L., Sloan, L., & Bryman, A. (2021). <i>Bryman’s Social Research Methods</i> (6th ed.).</li>
+<li>Creswell, J. W., & Poth, C. N. (2023). <i>Qualitative Inquiry and Research Design</i> (5th ed.).</li>
+<li>Godard, J. (2014). The psychologisation of employment relations?</li>
+<li>Hebson, G., Grimshaw, D., & Marchington, M. (2003). PPPs and the changing public sector ethos.</li>
+<li>Dupuis, M. (2018). Crafting alternatives to corporate restructuring.</li>
+<li>Wright, C. F. (2023). Addressing problems for labour not problems of labour.</li>
+</ul><p class="small">Seterusnya: Metodologi dan Kaedah — bagaimana kita menyiasat realiti tersebut secara sistematik?</p>
+</div></section>
+
+<div class="nav"><button id="prev" class="prev">← Kembali</button><button id="next" class="next">Seterusnya →</button></div>
+</main><footer>FLARE-IR • Research Methods • Complete SIM • Reading + Interaction</footer>
+<script>
+const S=[...document.querySelectorAll('.screen')], ans={q1:'c',q2:'b',q3:'b',q4:'b',q5:'a'}, done={};let i=0;
+function show(n){i=n;S.forEach((x,k)=>x.classList.toggle('active',k===n));prev.style.visibility=n?'visible':'hidden';next.textContent=n===S.length-1?'Selesai':'Seterusnya →';bar.style.width=((n+1)/S.length*100)+'%';if(n===S.length-1){score.textContent=Object.keys(ans).filter(q=>done[q]===ans[q]).length+'/5'}scrollTo({top:0,behavior:'smooth'})}
+prev.onclick=()=>show(Math.max(0,i-1));next.onclick=()=>{if(i<S.length-1)show(i+1)};
+document.querySelectorAll('.choice[data-q]').forEach(b=>b.onclick=()=>{let q=b.dataset.q,v=b.dataset.v;done[q]=v;document.querySelectorAll(`[data-q="${q}"]`).forEach(x=>x.classList.remove('sel'));b.classList.add('sel');let f=document.getElementById('fb-'+q),ok=v===ans[q];f.classList.add('show');f.classList.toggle('warn',!ok);
+const msg={
+q1:ok?'<b>✓ Tepat.</b> Lima aduan membuktikan bilangan aduan formal, tetapi belum membuktikan hubungan yang baik.':'<b>Fikir semula.</b> Bukti itu berguna, tetapi tidak cukup untuk membuat kesimpulan tentang kepuasan atau kualiti hubungan.',
+q2:ok?'<b>✓ Tepat.</b> Tafsiran perlu disokong oleh data, konteks, ketelusan analitik dan refleksiviti.':'<b>Tidak.</b> Interpretivisme bukan bermaksud semua tafsiran sama sah.',
+q3:ok?'<b>✓ Tepat.</b> Dakwaan ini kekal dekat dengan apa yang ditunjukkan oleh data.':'<b>Belum defensible.</b> Angka tersebut tidak membuktikan penerimaan atau ketiadaan tekanan.',
+q4:ok?'<b>✓ Tepat.</b> Jika dakwaan berkaitan pengalaman, bukti perlu memberi akses kepada pengalaman tersebut.':'<b>Fikir tentang jenis pengetahuan.</b> Laporan produktiviti sahaja tidak menerangkan pengalaman pekerja.',
+q5:ok?'<b>✓ Tepat.</b> Pendekatan kritikal/LPT secara langsung menyoal kuasa, kawalan dan kepentingan.':'<b>Belum tepat.</b> Soalan tentang kuasa dan kawalan ialah teras pendekatan kritikal/LPT.'
+};f.innerHTML=msg[q]});
+const E={stats:'<b>Boleh diketahui:</b> 5 aduan formal direkodkan.<br><b>Belum diketahui:</b> kepuasan, ketakutan atau kepercayaan pekerja.',worker:'<b>Boleh dipelajari:</b> pengalaman dan tafsiran pekerja ini.<br><b>Batas:</b> satu akaun tidak mewakili semua pekerja secara automatik.',union:'<b>Pengetahuan tambahan:</b> suara pekerja mungkin bergerak melalui saluran tidak formal yang tidak muncul dalam statistik.',policy:'<b>Boleh diketahui:</b> prosedur rasmi wujud.<br><b>Belum diketahui:</b> sama ada pekerja mempercayai atau menggunakannya.'};
+document.querySelectorAll('.evidence').forEach(b=>b.onclick=()=>{document.querySelectorAll('.evidence').forEach(x=>x.classList.remove('sel'));b.classList.add('sel');document.getElementById('e-detail').innerHTML=E[b.dataset.e]});
+const L={post:'<b>📊 Postpositivis:</b> “Apakah faktor yang meramalkan penggunaan mekanisme aduan?”<br><span class="small">Pengukuran, pola, pengujian penjelasan.</span>',interp:'<b>🗣️ Interpretif:</b> “Bagaimanakah pekerja memahami risiko membuat aduan?”<br><span class="small">Makna, pengalaman, tafsiran dan konteks.</span>',crit:'<b>⚖️ Kritikal:</b> “Bagaimanakah hubungan kuasa mempengaruhi keupayaan pekerja untuk bersuara?”<br><span class="small">Kuasa, ketidaksamaan, kawalan dan kepentingan.</span>',real:'<b>⚙️ Realis Kritikal:</b> “Apakah mekanisme yang menyebabkan pekerja berdiam diri dalam konteks tertentu?”<br><span class="small">Struktur, mekanisme, konteks dan outcome.</span>'};
+document.querySelectorAll('.lens').forEach(b=>b.onclick=()=>{document.querySelectorAll('.lens').forEach(x=>x.classList.remove('sel'));b.classList.add('sel');document.getElementById('lens-detail').innerHTML=L[b.dataset.l]});
+const R={uni:'Penyelidik universiti mungkin dianggap lebih bebas, tetapi identiti, bahasa dan cara bertanya masih membentuk interaksi.',hr:'Pegawai HR mempunyai kedudukan organisasi; pekerja mungkin menapis jawapan jika bimbang tentang akibat pekerjaan.',boss:'Hubungan kuasa sangat jelas. Pekerja mungkin enggan mendedahkan kritikan kepada penyelia sendiri.',union:'Pegawai kesatuan mungkin meningkatkan rasa selamat bagi sesetengah pekerja, tetapi kedudukannya juga boleh mempengaruhi apa yang ditekankan.'};
+document.querySelectorAll('.researcher').forEach(b=>b.onclick=()=>{document.querySelectorAll('.researcher').forEach(x=>x.classList.remove('sel'));b.classList.add('sel');document.getElementById('r-detail').innerHTML=R[b.dataset.r]});
+show(0);
+</script></body></html>
